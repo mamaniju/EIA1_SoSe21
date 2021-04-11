@@ -58,6 +58,9 @@ strong {
     letter-spacing: -3px;
     text-decoration: none;
 }
+#navegation a:hover {
+    color: #B8860B;
+}
 h2 {
     color: teal;
     font-family: sans-serif;
