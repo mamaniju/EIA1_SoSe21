@@ -1,0 +1,65 @@
+body {
+    background-image: url(./bg.png);
+    background-repeat: repeat;
+    margin: auto;
+    font-family: sans-serif, Tahoma, Verdana;
+    max-width: 800px;
+    width: 100%;
+}
+header {
+    border-radius: 0px 0px 350px 350px;
+    max-width: 700px;
+    height: 350px;
+    background-color: #B8860B;
+    text-align: center;
+    margin: -27px
+}
+strong {
+    font-family: sans-serif;
+    color: white;
+    font-size: 150px;
+    letter-spacing: -21px;
+    margin-top: 0px; 
+}
+.Marca {
+    font-style: italic;
+    color: white;
+    margin: -60px;
+    font-size: 35px;
+    letter-spacing: -2px;
+    margin-left: 180px;
+}
+.socialmedia {
+    width: 780px;
+    margin-top: 70px;
+}
+#navegation {
+    position: fixed;
+    background-color: #008080;
+    margin-top: -308px;
+    margin-left: 550px;
+    border-radius: 20px;
+    padding: 15px 20px 20px 20px;
+}
+#navegation a.active {
+    background-color: white;
+    border-radius: 10px 10px ;
+    color: #B8860B;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-decoration: none;
+    border: 2px solid white;
+    letter-spacing: -2px;
+}
+#navegation a {
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+    letter-spacing: -3px;
+    text-decoration: none;
+}
+h2 {
+    color: teal;
+    font-family: sans-serif;
+    font-size: 55px; 
+}
