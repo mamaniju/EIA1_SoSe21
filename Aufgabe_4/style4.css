@@ -1,0 +1,59 @@
+body{
+    background-image: url(./bg.png);
+}
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text-title {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div>h1 {
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.text {
+    color: white;
+    font-size: 15px;
+}
+b {
+    font-family: sans-serif;
+}
+.imagen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.shell {
+    margin-top: 100px;
+    margin-left: -350px;
+    position: absolute;
+}
+.penguin {
+    margin-top: 10px;
+    margin-left: 170px;
+    position: absolute;
+}
+nav a {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color:midnightblue;
+    font-size: 25px;
+}
+.station {
+    background-color:wheat;
+    border-radius: 5px;
+    letter-spacing:-2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border:wheat 10px solid;
+}

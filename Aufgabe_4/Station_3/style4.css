@@ -1,0 +1,69 @@
+body{
+    background-image: url(./bg.png);
+}
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text-title {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div>h1 {
+    color: white;
+    font-size: 40px;
+    font-family: sans-serif;
+    margin-top: -170px;
+    margin-left: -180px;
+}
+b {
+    font-family: sans-serif;
+}
+nav a {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color:midnightblue;
+    font-size: 25px;
+}
+.station {
+    background-color:wheat;
+    border-radius: 5px;
+    letter-spacing:-2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border:wheat 10px solid;
+}
+.formular {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+form {
+    color: white;
+    display: inline-block;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -250px;
+    text-align: left;
+}
+#name {
+    padding: 0px 40px 5px 0px;
+}
+#nachricht {
+    padding: 0px 250px 70px 0px;
+}
+#unten {
+    padding: 0px;
+}
+label, input {
+    display: inline-block;
+    margin-bottom: 5px;
+}
