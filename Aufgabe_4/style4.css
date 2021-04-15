@@ -44,16 +44,20 @@ b {
 }
 nav a {
     position: relative;
-    top: 10px;
+    top: 0px;
+    right: 0px;
     display: inline-block;
     text-decoration: none;
     color:midnightblue;
-    font-size: 25px;
+    font-size: 20px;
 }
 .station {
     background-color:wheat;
     border-radius: 5px;
     letter-spacing:-2px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border:wheat 10px solid;
+    border:wheat 5px solid;
+}
+nav a:hover {
+    color:indianred;
 }
