@@ -42,14 +42,20 @@ b {
     margin-left: 170px;
     position: absolute;
 }
-nav a {
-    position: relative;
+nav *a {
+    position: absolute;
     top: 0px;
-    right: 0px;
-    display: inline-block;
-    text-decoration: none;
+    left: 0px;
     color:midnightblue;
     font-size: 20px;
+    display: block;
+}
+a {
+    display: block;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 20px;
+
 }
 .station {
     background-color:wheat;
@@ -57,6 +63,7 @@ nav a {
     letter-spacing:-2px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border:wheat 5px solid;
+    text-decoration: none;
 }
 nav a:hover {
     color:indianred;

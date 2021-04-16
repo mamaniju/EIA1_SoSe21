@@ -37,7 +37,10 @@ nav a {
     border-radius: 5px;
     letter-spacing:-2px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border:wheat 10px solid;
+    border:wheat 5px solid;
+}
+nav a:hover {
+    color:indianred;
 }
 .formular {
     text-align: left;

@@ -17,15 +17,23 @@ body{
 div>h1 {
     color: white;
     font-size: 25px;
-    font-family: sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: -90px;
+    margin-left: -230px;
 }
-nav a {
+.text {
+    color: white;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 70px;
+    margin-left: -230px;
+}
+nav *a {
     position: absolute;
-    top: 5px;
+    top: 0px;
     left: 0px;
-    text-decoration: none;
     color:midnightblue;
-    font-size: 25px;
+    font-size: 20px;
 }
 .station {
     background-color:wheat;
@@ -33,51 +41,38 @@ nav a {
     letter-spacing:-2px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border:wheat 5px solid;
+    text-decoration: none;
 }
 nav a:hover {
     color:indianred;
 }
-.title-station2 {
-    font-size: 25px;
-    margin-top: -150px;
-}
-.muschel {
+#baum {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.perle  {
-    position: absolute;
-    top: 70px;
-    left: -220px;
-    background: url("./muschel.png");
-    width: 70px;
-    height: 65px;
+.animation {
+    margin-top: 0px;
+    margin-left: 300px;
 }
-.perle:hover {
-    background-image: url(./muschel_perle.png);
-    
-}
-.perla {
+#gif {
     position: absolute;
-    top: -30px;
+    top: 180px;
+    left: 300px;
+}
+.gif-muschel{
+    position: absolute;
+    top: -125px;
+    left: -200px;
+}
+.muschel {
+    position: absolute;
+    top: 80px;
     left: -50px;
-    background: url("./muschel.png");
-    width: 70px;
-    height: 65px;
 }
-.perla:hover {
-    background-image: url(./muschel_perle.png);
-}
-.perl {
+.perle {
     position: absolute;
-    top: 40px;
-    left: 100px;
-    background: url("./muschel.png");
-    width: 70px;
-    height: 65px;
-}
-.perl:hover {
-    background: url(./muschel_perle.png);
+    top: -160px ;
+    left: 30px;
 }
