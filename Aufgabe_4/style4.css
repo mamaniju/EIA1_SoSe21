@@ -1,7 +1,12 @@
+header {
+    position: absolute;
+    z-index: 1;
+}
 body{
     background-image: url(./bg.png);
 }
 .wrapper {
+    z-index: 0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -43,6 +48,7 @@ b {
     position: absolute;
 }
 nav *a {
+    z-index: 1;
     position: absolute;
     top: 0px;
     left: 0px;
