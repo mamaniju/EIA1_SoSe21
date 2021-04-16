@@ -80,3 +80,18 @@ nav a:hover {
     top: -160px ;
     left: 30px;
 }
+.stern1 {
+    position: absolute;
+    top: 200px;
+    right: 200px;
+}
+.stern2 {
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+}
+.stern3 {
+    position: absolute;
+    top: 80px;
+    left: 250px;
+}

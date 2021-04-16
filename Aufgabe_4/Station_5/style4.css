@@ -42,10 +42,9 @@ nav a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.bandelore1 {
+.nono {
+    z-index: 1;
     position: absolute;
     bottom: -20px;
-    right: -30px;
-    z-index: 1;
-
+    right: -30px
 }
