@@ -53,7 +53,7 @@ var austraProzentGes = ((australia2018 / gesamtemission) * 100).toFixed(1);
 var austraProzentVergl = (((australia2018 / australia2008) - 1) * 100).toFixed(1);
 var austraCO2vergleich = (australia2018 - australia2008).toFixed(1);
 
-
+//Konsole
 //Europa
 console.log("Die Emission von " + europe + " ist: " + europe2018 + " kg CO2. ");
 console.log("Relativ zu Gesamtemission der Welt verursacht " + europe + " damit " + euroProzentGes + " %. ");
