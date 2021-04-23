@@ -51,17 +51,17 @@ var austraProzentVergl = (((australia2018 / australia2008) - 1) * 100).toFixed(1
 var austraCO2vergleich = (australia2018 - australia2008).toFixed(1);
 //Europa
 console.log("Die Emission von " + europe + " ist: " + europe2018 + " kg CO2. ");
-console.log("Relativ zu Gesamtemission der Welt verursacht " + europe + "damit " + euroProzentGes + " %. ");
+console.log("Relativ zu Gesamtemission der Welt verursacht " + europe + " damit " + euroProzentGes + " %. ");
 console.log("Für " + europe + " hat sich 2018 im Vergleich zu 2008 die Emission um " + euroProzentVergl + " % verändert.");
 console.log("2018 im Vergleich zu 2008 sind das " + euroCO2vergleich + " kg CO2.");
 //Nordamerika
 console.log("Die Emission von " + Namerica + " ist: " + Namerica2018 + " kg CO2.");
-console.log("Relative zu Gesamtemission der Welt verursacht " + Namerica + "damit " + NamericaProzentGes + " %. ");
+console.log("Relative zu Gesamtemission der Welt verursacht " + Namerica + " damit " + NamericaProzentGes + " %. ");
 console.log("Für " + Namerica + " hat sich 2018 im Vergleich zu 2008 die Emission um " + NamericaProzentVergl + " % verändert.");
 console.log("2018 im Vergleich zu 2008 sind das " + NamericaCO2vergleich + " kg CO2.");
 //Südamrika 
 console.log("Die Emission von " + Samerica + " ist: " + Samerica2018 + " kg CO2");
-console.log("Relative zu Gesamtemission der Welt verursacht " + Samerica + "damit " + SamericaProzentGes + " %.");
+console.log("Relative zu Gesamtemission der Welt verursacht " + Samerica + " damit " + SamericaProzentGes + " %.");
 console.log("Für " + Samerica + " hat sich 2018 im Vergleich zu 2008 die Emission um " + SamericaCO2vergleich + " % veräandert.");
 console.log("2018 im Vergleich zu 2008 sind das " + SamericaCO2vergleich + " kg CO2.");
 //Afrika
@@ -78,5 +78,5 @@ console.log("2018 im Vergleich zu 2008 sind das " + asiaCO2vergleich + " kg CO2.
 console.log("Die Emission von " + australia + " ist: " + australia2018 + " kg CO2");
 console.log("Relative zu Gesamtemission der Welt verursacht " + australia + " damit " + austraProzentGes + " %.");
 console.log("Für " + australia + " hat sich 2018 im Vergleich zu 2008 die Emission um " + austraProzentVergl + " % verändert.");
-console.log("2018 im Vergleich zu 2008 sind das" + austraCO2vergleich + " kg CO2.");
+console.log("2018 im Vergleich zu 2008 sind das " + austraCO2vergleich + " kg CO2.");
 //# sourceMappingURL=myscript.js.map
