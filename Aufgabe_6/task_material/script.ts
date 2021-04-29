@@ -46,9 +46,9 @@ window.addEventListener("load", function () {
 function myFunction(nombreContinente: string, valorEmissionContinente2018: number, valorEmissionContinente2008: number) {
     document.querySelector("#titleRegion").innerHTML = nombreContinente;
     document.querySelector("#nameKontinetAbsolut2018").innerHTML = nombreContinente;
-    document.querySelector("#emissionAbsolute2018").innerHTML = valorEmissionContinente2018.toFixed(1); //ich wusste nicht wie soll ich hier "parseFloat benutzen :(
+    document.querySelector("#emissionAbsolute2018").innerHTML = valorEmissionContinente2018.toFixed(1); 
     document.querySelector("#relativeEmission").innerHTML = ((valorEmissionContinente2018 / gesamtEmission) * 100).toFixed(1) + " % ";
     document.querySelector("#growthRateProzent").innerHTML = (((valorEmissionContinente2018 / valorEmissionContinente2008) - 1) * 100).toFixed(1) + " % ";
     document.querySelector("#growthRateAbsolute").innerHTML = (valorEmissionContinente2018 - valorEmissionContinente2008).toFixed(1);
-    document.querySelector(".chartWrapper .chart").setAttribute("style", "height:" + ((valorEmissionContinente2018 / gesamtEmission) * 100) + " % "); // :( Miene Grafik bewegt sie nicht!
+    document.querySelector(".chart").setAttribute("style", "height:" + ((valorEmissionContinente2018 / gesamtEmission) * 100) + "%");
 }
