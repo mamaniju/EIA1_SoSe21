@@ -5,11 +5,12 @@ body {
     font-family: sans-serif, Tahoma, Verdana;
     max-width: 800px;
     width: 100%;
+    text-align: center;
 }
 header {
-    border-radius: 0px 0px 350px 350px;
-    max-width: 700px;
-    height: 350px;
+    border-radius: 0px 0px 750px 750px;
+    max-width: 800px;
+    height: 400px;
     background-color: #B8860B;
     text-align: center;
     margin: -27px
@@ -17,21 +18,22 @@ header {
 strong {
     font-family: sans-serif;
     color: white;
-    font-size: 150px;
+    font-size: 170px;
     letter-spacing: -21px;
-    margin-top: 0px; 
+    line-height: 180px;
 }
 .Marca {
     font-style: italic;
     color: white;
-    margin: -60px;
-    font-size: 35px;
+    margin: -20px;
+    font-size: 40px;
     letter-spacing: -2px;
-    margin-left: 180px;
+    margin-left: 220px;
 }
 .socialmedia {
-    width: 780px;
-    margin-top: 70px;
+    width: 750px;
+    margin-top: 20px;
+    padding-left: 50px;
 }
 #navegation {
     position: fixed;
@@ -69,4 +71,5 @@ h2 {
 h1 {
     color: teal;
     font-family: sans-serif;
+    padding-top: 70px;
 }
