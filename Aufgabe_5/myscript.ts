@@ -1,7 +1,7 @@
 
 //Europa
 var europe: string = "Europa";
-var europe2008: number = 4865.7;
+var europe2008: number = 4965.7;
 var europe2018: number = 4209.3;
 //Nordamerika
 var Namerica: string = "Nordamerika";
