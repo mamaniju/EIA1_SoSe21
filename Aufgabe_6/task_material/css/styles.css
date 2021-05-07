@@ -9,7 +9,10 @@ html, body {
 }
 
 nav {
-    margin-bottom: 60px;
+    margin-bottom: 60px;  
+}
+nav:hover {
+    cursor: pointer;
 }
 
 section {
