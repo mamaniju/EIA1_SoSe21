@@ -1,4 +1,4 @@
-
+namespace Aufgabe8 {
 //Aufgabe 7.1//
 var mp3audios: string[] = [           //Mein Array hier hat 9 index//
     "./task_material/assets/A.mp3", 
@@ -72,12 +72,14 @@ document.querySelector ("#delete").addEventListener ("click", function (): void 
 });
 //Remix// 
 document.querySelector ("#remix").addEventListener ("click", function (): void {
-    setInterval (function (): void {
-        playSample (mp3audios [index]); 
-        index = Math.floor (Math.random () * 9); //Zufällig Zahl     
-        console.log(index);
-        
-    },           400);    
+    beats = []; 
+    
+    for (let i: number = 0; i < 4 ; i++) {
+        var zufaelligZahl: number = Math.floor(Math.random() * 9);
+        var zufaelligAudio: string = mp3audios [zufaelligZahl]; //Zufällig Zahl (index)
+        beats.push (zufaelligAudio); 
+        console.log(zufaelligAudio);
+    }
 
 });
 
@@ -94,3 +96,4 @@ pauseButton.addEventListener ("click", function (): void {
     this.classList.add ("is-hidden"); //pauseButton bekommt die ClasseElement//
     playButton.classList.remove ("is-hidden"); //pauseButton verliert die ClasseElement//
 }); 
+}
