@@ -1,0 +1,74 @@
+body {
+    background-color: #008080;
+}
+h1 {
+    font-family: sans-serif;
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+}
+h3 {
+    font-family: sans-serif;
+    font-size: 30px;
+    color:#a9a9a9;
+    text-align: center;
+}
+div, .todoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todoInput, .todoButton {
+    padding: 10px;
+    font-size: 40px;
+    border-radius:10px;
+    background-color: #daa520;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+.todoButton :hover{
+    background-color:#daa520;
+    color: #008080;
+}
+.todoList {
+    list-style: none;
+}
+.todoLiTochter {
+    margin: 5px;
+    background-color: #daa520; 
+    color: #fff;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 550px;
+    height: 50px;
+    margin-left: -40px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    cursor: pointer;
+}
+.fa-calendar {
+    margin-left: 10px;
+    width: 10px;
+    font-size: 50px;
+    margin-right: 40px;
+}
+.fa-check {
+    position: absolute;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #008080;
+}
+.fa-trash-alt {
+    margin-left: 200px;
+}
+.fa-trash-alt:hover {
+    cursor: pointer;
+    color: #008080;
+}
+.is-hidden {
+    display: none !important;
+}
