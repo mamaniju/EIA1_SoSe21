@@ -57,6 +57,7 @@ var Aufgabe_10;
         }
     }
     function toggleCheckState(index) {
+        todosText[index].check = !todosText[index].check;
         drawListToDOM();
     }
     function deleteTodo(index) {
