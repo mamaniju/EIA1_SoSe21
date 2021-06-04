@@ -12,6 +12,16 @@ main {
 #counter, #zahlDone, #zahlOpen {
     color: grey;
 }
+#microphone{
+    color:darkslategray;
+    font-size: 45px;
+
+}
+p {
+    font-size: 15px;
+    color: dimgrey;
+}
+
 .inputGroup {
     position: relative;
 }

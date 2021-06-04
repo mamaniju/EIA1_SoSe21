@@ -45,13 +45,13 @@ var Aufgabe_10;
                     interimResults: true,
                     debug: true
                 }).then(function () {
+                    artyom.say("Sage erstelle Aufgabe");
                     console.log("Ready!");
                 });
             }, 250);
         }
         document.querySelector("#microphone").addEventListener("click", function () {
             startContinuousArtyom();
-            artyom.say("Sage erstelle Aufgabe");
         });
     });
     addButtonDOMElement.addEventListener("click", addTodo);

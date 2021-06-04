@@ -56,6 +56,7 @@ namespace Aufgabe_10 {
                         interimResults: true,
                         debug: true
                     }).then(function(): void {
+                        artyom.say("Sage erstelle Aufgabe"); 
                         console.log("Ready!");
                     });
                 }, 
@@ -63,7 +64,6 @@ namespace Aufgabe_10 {
         }
         document.querySelector("#microphone").addEventListener("click", function (): void {
             startContinuousArtyom();
-            artyom.say("Sage erstelle Aufgabe"); 
         }); 
 
     });
