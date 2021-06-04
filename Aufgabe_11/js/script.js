@@ -22,6 +22,19 @@ var Aufgabe_10;
     ];
     window.addEventListener("load", function () {
         var artyom = new Artyom();
+        artyom.addCommands({
+            indexes: ["erstelle Aufgabe *"],
+            smart: true,
+            action: function (i, wildcard) {
+                todosText.unshift({
+                    text: wildcard,
+                    check: false
+                });
+                drawListToDOM(); //Funktion wird angerufen//
+                console.log("Neue Aufgabe wird erstellt: " + wildcard);
+                artyom.say("Die Aufgabe" + wildcard + "wurde deiner Liste hinzugefügt");
+            }
+        });
         function startContinuousArtyom() {
             artyom.fatality();
             setTimeout(function () {
@@ -36,24 +49,13 @@ var Aufgabe_10;
                 });
             }, 250);
         }
-        //startContinuousArtyom(); //anrufen die Funktion//
-        artyom.addCommands({
-            indexes: ["erstelle Aufgabe *"],
-            smart: true,
-            action: function (i, wildcard) {
-                console.log("Neue Aufgabe wird erstellt: " + wildcard);
-                todosText.unshift({
-                    text: wildcard,
-                    check: false
-                });
-            }
-        });
         document.querySelector("#microphone").addEventListener("click", function () {
             startContinuousArtyom();
+            artyom.say("Sage erstelle Aufgabe");
         });
-        addButtonDOMElement.addEventListener("click", addTodo);
-        drawListToDOM();
     });
+    addButtonDOMElement.addEventListener("click", addTodo);
+    drawListToDOM();
     function drawListToDOM() {
         todosDOMElement.innerHTML = "";
         var _loop_1 = function (index) {

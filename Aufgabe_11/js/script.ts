@@ -6,7 +6,6 @@ namespace Aufgabe_10 {
     let counterDOMElement: HTMLElement = document.querySelector("#counter");
     let zahlDoneDOMElement: HTMLElement = document.querySelector("#zahlDone");
     let zahlOpenDomElement: HTMLElement = document.querySelector("#zahlOpen");
-    declare var Artyom: any;
 
     interface ToDos {
         check: boolean;
@@ -27,52 +26,50 @@ namespace Aufgabe_10 {
         }
     ];
 
+    declare var Artyom: any;
     window.addEventListener("load", function (): void {
         const artyom: any = new Artyom();
 
+        artyom.addCommands({
+            indexes: ["erstelle Aufgabe *"],
+            smart: true,
+            action: function(i: any, wildcard: string): void {
+                todosText.unshift({
+                    text: wildcard,
+                    check: false
+                });
+                drawListToDOM(); //Funktion wird angerufen//
+                console.log("Neue Aufgabe wird erstellt: " + wildcard);
+                artyom.say("Die Aufgabe" + wildcard + "wurde deiner Liste hinzugefügt");
+            }
+        });
+        
         function startContinuousArtyom(): void {
             artyom.fatality();
-
+        
             setTimeout(
-                function (): void {
+                function(): void {
                     artyom.initialize({
                         lang: "de-DE",
                         continuous: true,
                         listen: true,
                         interimResults: true,
                         debug: true
-                    }).then(function (): void {
+                    }).then(function(): void {
                         console.log("Ready!");
                     });
-                },
+                }, 
                 250);
         }
+        document.querySelector("#microphone").addEventListener("click", function (): void {
+            startContinuousArtyom();
+            artyom.say("Sage erstelle Aufgabe"); 
+        }); 
 
-        //startContinuousArtyom(); //anrufen die Funktion//
-
-        artyom.addCommands({
-            indexes: ["erstelle Aufgabe *"],
-            smart: true,
-            action: function (i: any, wildcard: string): void {
-                console.log("Neue Aufgabe wird erstellt: " + wildcard);
-                todosText.unshift ({
-                    text: wildcard, 
-                    check: false
-
-                });
-        
-            }   
-        });
-    
-        document.querySelector ("#microphone").addEventListener ("click", function (): void {
-            startContinuousArtyom(); 
-        });
-
-
-
-        addButtonDOMElement.addEventListener("click", addTodo);
-        drawListToDOM();
     });
+    
+    addButtonDOMElement.addEventListener("click", addTodo);
+    drawListToDOM();
 
     function drawListToDOM(): void {
         todosDOMElement.innerHTML = "";
@@ -94,12 +91,10 @@ namespace Aufgabe_10 {
             });
             todosDOMElement.appendChild(todo);
         }
-
         updateCounter();
         doneCounter(); //für done (erledigte) function//
         openCounter(); //für open (offene)  function//
     }
-
     function updateCounter(): void {
         counterDOMElement.innerHTML = todosText.length + " in total";
     }
@@ -119,18 +114,14 @@ namespace Aufgabe_10 {
         }
         zahlOpenDomElement.innerHTML = zahlNummerOpen + " open";
     }
-
     function addTodo(): void {
-
         if (inputDOMElement.value != "") {
-
             todosText.unshift(
                 {
                     text: inputDOMElement.value,
                     check: false
                 }
             );
-
             inputDOMElement.value = "";
             drawListToDOM();
         }
@@ -139,7 +130,6 @@ namespace Aufgabe_10 {
         todosText[index].check = !todosText[index].check;
         drawListToDOM();
     }
-
     function deleteTodo(index: number): void {
         todosText.splice(index, 1);
         drawListToDOM();
