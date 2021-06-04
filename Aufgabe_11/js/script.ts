@@ -66,7 +66,7 @@ namespace Aufgabe_10 {
     
         document.querySelector ("#microphone").addEventListener ("click", function (): void {
             startContinuousArtyom(); 
-        })
+        });
 
 
 
